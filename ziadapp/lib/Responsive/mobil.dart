@@ -1,11 +1,19 @@
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:flutter/material.dart';
 
-class mobile extends StatelessWidget {
-  const mobile({super.key});
+class MobileScerren extends StatefulWidget {
+  const MobileScerren({Key? key}) : super(key: key);
 
   @override
+  State<MobileScerren> createState() => _MobileScerrenState();
+}
+
+class _MobileScerrenState extends State<MobileScerren> {
+  @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("mobile screen"),
+      ),
+    );
   }
 }

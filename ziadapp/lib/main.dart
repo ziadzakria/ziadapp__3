@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'home.dart';
+import 'Responsive/mobil.dart';
+import 'Responsive/responsive.dart';
+import 'Responsive/web.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +14,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: home(),
+      home: Resposive(
+        myMobileScreen: MobileScerren(),
+        myWebScreen: WebScerren(),
+      ),
     );
   }
 }
