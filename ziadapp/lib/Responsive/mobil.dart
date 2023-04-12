@@ -16,6 +16,7 @@ class MobileScerren extends StatefulWidget {
 
 class _MobileScerrenState extends State<MobileScerren> {
   final PageController _pageController = PageController();
+  int currentPage = 0;
 
   @override
   void dispose() {
@@ -30,36 +31,39 @@ class _MobileScerrenState extends State<MobileScerren> {
           backgroundColor: mobileBackgroundColor,
           onTap: (index) {
             _pageController.jumpToPage(index);
+            setState(() {
+              currentPage = index;
+            });
           },
           items: [
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,
-                  color: secondaryColor,
+                  color: currentPage == 0 ? primaryColor : secondaryColor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.search,
-                  color: primaryColor,
+                  color: currentPage == 1 ? primaryColor : secondaryColor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.add_circle,
-                  color: secondaryColor,
+                  color: currentPage == 2 ? primaryColor : secondaryColor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.favorite,
-                  color: secondaryColor,
+                  color: currentPage == 3 ? primaryColor : secondaryColor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.person,
-                  color: secondaryColor,
+                  color: currentPage == 4 ? primaryColor : secondaryColor,
                 ),
                 label: ""),
           ]),
@@ -67,6 +71,8 @@ class _MobileScerrenState extends State<MobileScerren> {
         onPageChanged: (index) {
           print("------- $index");
         },
+        physics: NeverScrollableScrollPhysics(),
+        controller: _pageController,
         children: [
           Home(),
           AddPost(),
