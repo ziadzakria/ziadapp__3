@@ -14,7 +14,10 @@ class _MobileScerrenState extends State<MobileScerren> {
       appBar: AppBar(
         title: Text("mobile screen"),
       ),
-      bottomNavigationBar: BottomNavigationBar(items: []),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
+        BottomNavigationBarItem(icon: Icon(Icons.search), label: 'home'),
+      ]),
     );
   }
 }
