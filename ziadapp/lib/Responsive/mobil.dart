@@ -17,7 +17,28 @@ class _MobileScerrenState extends State<MobileScerren> {
       appBar: AppBar(
         title: Text("mobile screen"),
       ),
-      bottomNavigationBar: CupertinoTabBar()(items: [
+      bottomNavigationBar: CupertinoTabBar(
+        backgroundColor: mobileBackgroundColor,
+        onTap: ,
+
+
+
+
+
+
+
+
+      )
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      (items: [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
         BottomNavigationBarItem(icon: Icon(Icons.search), label: 'home'),
       ]),
