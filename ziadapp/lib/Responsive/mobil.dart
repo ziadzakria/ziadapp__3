@@ -27,7 +27,7 @@ class _MobileScerrenState extends State<MobileScerren> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("AddPost Screen"),
+        title: Text("mobile Screen"),
       ),
       bottomNavigationBar: CupertinoTabBar(
           backgroundColor: mobileBackgroundColor,
