@@ -26,9 +26,6 @@ class _MobileScerrenState extends State<MobileScerren> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("mobile Screen"),
-      ),
       bottomNavigationBar: CupertinoTabBar(
           backgroundColor: mobileBackgroundColor,
           onTap: (index) {
