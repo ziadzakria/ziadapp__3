@@ -44,6 +44,17 @@ class _HomeState extends State<Home> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
+                        padding: EdgeInsets.all(3)
+
+
+
+
+
+
+
+
+
+
                         child: CircleAvatar(
                           radius: 26,
                           backgroundImage: NetworkImage(
