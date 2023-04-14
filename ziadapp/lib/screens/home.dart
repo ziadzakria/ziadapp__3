@@ -96,7 +96,15 @@ class _HomeState extends State<Home> {
                       ],
                     ),
                   ])),
-          text("10 likes", style: TextStyle())
+          Container(
+              margin: EdgeInsets.fromLTRB(10, 0, 0, 10),
+              width: double.infinity,
+              child: Text(
+                "10 Likes",
+                textAlign: TextAlign.start,
+                style: TextStyle(
+                    fontSize: 18, color: Color.fromARGB(214, 157, 157, 165)),
+              )),
         ],
       ),
     );
