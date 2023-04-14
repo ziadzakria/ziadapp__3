@@ -3,6 +3,7 @@ import '../color.dart';
 import 'package:ziadapp/screens/home.dart';
 import '../screens/search.dart';
 import '../screens/addpost.dart';
+import '../screens/profile.dart';
 
 
 class WebScerren extends StatefulWidget {
@@ -69,6 +70,8 @@ class _WebScerrenState extends State<WebScerren> {
           Home(),
           Search(),
                     AddPost(),
+
+                     Profile(),
 
 
 
