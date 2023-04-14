@@ -83,6 +83,12 @@ class _HomeState extends State<Home> {
                             Icons.comment_outlined,
                           ),
                         ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            Icons.send,
+                          ),
+                        ),
                       ],
                     ),
                   ])),
