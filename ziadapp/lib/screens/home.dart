@@ -96,6 +96,7 @@ class _HomeState extends State<Home> {
                       ],
                     ),
                   ])),
+          text("10 likes", style: TextStyle())
         ],
       ),
     );
