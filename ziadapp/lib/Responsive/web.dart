@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../color.dart';
 import 'package:ziadapp/screens/home.dart';
+import '../screens/search.dart';
 
 class WebScerren extends StatefulWidget {
   const WebScerren({Key? key}) : super(key: key);
@@ -64,6 +65,8 @@ class _WebScerrenState extends State<WebScerren> {
         physics: NeverScrollableScrollPhysics(),
         children: [
           Home(),
+          Search(),
+
          
         ],
       ),
