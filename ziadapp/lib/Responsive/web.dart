@@ -42,6 +42,13 @@ class _WebScerrenState extends State<WebScerren> {
             ),
             onPressed: () {},
           ),
+          IconButton(
+            icon: Icon(
+              Icons.person,
+              color: secondaryColor,
+            ),
+            onPressed: () {},
+          ),
         ],
       ),
     );
