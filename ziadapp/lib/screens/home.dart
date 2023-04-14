@@ -60,10 +60,12 @@ class _HomeState extends State<Home> {
                 ],
               ),
             ),
-          Image.network("https://www.bing.com/th?id=OIP.wsea46ztGMyu2Ki7sKAkIgHaLH&w=137&h=206&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2")
-          fit:BoxFit.caver,
-          height:MediaQuery.of(context).size.height*0.25,
-          
+            Image.network(
+              "https://www.bing.com/th?id=OIP.wsea46ztGMyu2Ki7sKAkIgHaLH&w=137&h=206&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2",
+              fit: BoxFit.cover,
+              height: MediaQuery.of(context).size.height * 0.25,
+              width: double.infinity,
+            ),
           ],
         ));
   }
