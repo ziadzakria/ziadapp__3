@@ -130,7 +130,18 @@ class _HomeState extends State<Home> {
       ),
 
 
-              Container()
+              Container(
+                  margin: EdgeInsets.fromLTRB(10, 0, 9, 10),
+              width: double.infinity,
+
+
+
+
+
+
+
+
+              )
           ),
       ),
     
