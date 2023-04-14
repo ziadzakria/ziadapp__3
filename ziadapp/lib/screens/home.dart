@@ -106,7 +106,7 @@ class _HomeState extends State<Home> {
                     fontSize: 18, color: Color.fromARGB(214, 157, 157, 165)),
               )),
           Row(
-                        children: [
+            children: [
               SizedBox(
                 width: 9,
               ),
@@ -123,27 +123,19 @@ class _HomeState extends State<Home> {
                     fontSize: 18, color: Color.fromARGB(255, 189, 196, 199)),
               ),
             ],
-          
-
-
-
-      ),
-
-
-              Container(
-                  margin: EdgeInsets.fromLTRB(10, 0, 9, 10),
-              width: double.infinity,
-
-
-
-
-
-
-
-
-              )
           ),
+          Container(
+              margin: EdgeInsets.fromLTRB(10, 0, 9, 10),
+              width: double.infinity,
+               child: Text(
+                  "view all 100 comments",
+                  style: TextStyle(
+                      fontSize: 18, color: Color.fromARGB(214, 157, 157, 165)),
+                  textAlign: TextAlign.start,
+                )),
+          ),
+        ],
       ),
-    
+    );
   }
 }
