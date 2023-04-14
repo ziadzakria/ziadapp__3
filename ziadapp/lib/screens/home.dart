@@ -48,6 +48,10 @@ class _HomeState extends State<Home> {
                 SizedBox(
                   width: 17,
                 ),
+                Text(
+                  "ziad elbana",
+                  style: TextStyle(fontSize: 15),
+                ),
               ],
             ),
           ],
