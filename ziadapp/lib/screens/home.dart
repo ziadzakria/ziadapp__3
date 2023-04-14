@@ -139,7 +139,11 @@ class _HomeState extends State<Home> {
                     textAlign: TextAlign.start,
                   )),
           ),
-          ),
+
+            Container(
+              margin: EdgeInsets.fromLTRB(10, 0, 9, 10),
+              
+              )),
         ],
       ),
     );
