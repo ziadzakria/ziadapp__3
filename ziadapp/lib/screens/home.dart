@@ -45,14 +45,10 @@ class _HomeState extends State<Home> {
                     children: [
                       Container(
                         padding: EdgeInsets.all(3)
-
-
-
-
-
-
-
-
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Color.fromARGB(125, 78, 91, 110),
+                        ),
 
 
                         child: CircleAvatar(
