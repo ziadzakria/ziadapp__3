@@ -56,7 +56,11 @@ class _WebScerrenState extends State<WebScerren> {
           height: 32,
         ),
       ),
-        ],
+        body: PageView(
+        onPageChanged: (index) {
+         
+        },
+       
       ),
     );
   }
