@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import '../color.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -15,10 +17,17 @@ class _HomeState extends State<Home> {
     return Scaffold(
       backgroundColor: mobileBackgroundColor,
       appBar: AppBar(
+        actions: [
+          IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.messenger_outline,
+              )),
+        ],
         backgroundColor: mobileBackgroundColor,
         title: SvgPicture.asset(
           "ziadapp/asstes/img/download.jpg",
-          Color: primaryColor,
+          color: primaryColor,
           height: 32,
         ),
       ),
