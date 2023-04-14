@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'Responsive/mobil.dart';
 import 'Responsive/responsive.dart';
 import 'Responsive/web.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 void main() {
   runApp(const MyApp());
