@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../color.dart';
 
 class WebScerren extends StatefulWidget {
   const WebScerren({Key? key}) : super(key: key);
@@ -12,7 +13,15 @@ class _WebScerrenState extends State<WebScerren> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("web screen"),
+        actions: [
+          IconButton(
+            icon: Icon(
+              Icons.home,
+              color: primaryColor,
+            ),
+            onPressed: () {},
+          ),
+        ],
       ),
     );
   }
