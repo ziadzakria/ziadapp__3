@@ -49,6 +49,13 @@ class _WebScerrenState extends State<WebScerren> {
             ),
             onPressed: () {},
           ),
+           backgroundColor: mobileBackgroundColor,
+        title: SvgPicture.asset(
+          "ziadapp\asstes\img\download.jpg",
+          color: primaryColor,
+          height: 32,
+        ),
+      ),
         ],
       ),
     );
