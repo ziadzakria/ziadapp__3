@@ -37,7 +37,7 @@ class _HomeState extends State<Home> {
         body: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(13.0),
               child: Row(
                 children: [
                   Row(
@@ -60,6 +60,9 @@ class _HomeState extends State<Home> {
                 ],
               ),
             ),
+          Image.network("https://www.bing.com/th?id=OIP.wsea46ztGMyu2Ki7sKAkIgHaLH&w=137&h=206&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2")
+          fit:BoxFit.caver,
+          hi
           ],
         ));
   }
