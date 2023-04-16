@@ -163,6 +163,11 @@ class _ProfileState extends State<Profile> {
                   MaterialStateProperty.all(Color.fromARGB(143, 255, 55, 112)),
               padding: MaterialStateProperty.all(
                   EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
+              shape: MaterialStateProperty.all(
+                RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(7),
+                ),
+              ),
             ),
           ),
         ]),
