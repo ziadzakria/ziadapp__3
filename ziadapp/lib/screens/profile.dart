@@ -117,60 +117,66 @@ class _ProfileState extends State<Profile> {
         SizedBox(
           height: 15,
         ),
-        Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-          ElevatedButton.icon(
-            onPressed: () {},
-            icon: Icon(
-              Icons.edit,
-              color: Colors.grey,
-              size: 24.0,
-            ),
-            label: Text(
-              "Edit profile",
-              style: TextStyle(fontSize: 17),
-            ),
-            style: ButtonStyle(
-              backgroundColor:
-                  MaterialStateProperty.all(Color.fromARGB(0, 90, 103, 223)),
-              padding: MaterialStateProperty.all(
-                  EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
-              shape: MaterialStateProperty.all(
-                RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(7),
-                  side: BorderSide(
-                      color: Color.fromARGB(109, 255, 255, 255),
-                      // width: 1,
-                      style: BorderStyle.solid),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton.icon(
+              onPressed: () {},
+              icon: Icon(
+                Icons.edit,
+                color: Colors.grey,
+                size: 24.0,
+              ),
+              label: Text(
+                "Edit profile",
+                style: TextStyle(fontSize: 17),
+              ),
+              style: ButtonStyle(
+                backgroundColor:
+                    MaterialStateProperty.all(Color.fromARGB(0, 90, 103, 223)),
+                padding: MaterialStateProperty.all(
+                    EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
+                shape: MaterialStateProperty.all(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(7),
+                    side: BorderSide(
+                        color: Color.fromARGB(109, 255, 255, 255),
+                        // width: 1,
+                        style: BorderStyle.solid),
+                  ),
                 ),
               ),
             ),
-          ),
-          SizedBox(
-            width: 15,
-          ),
-          ElevatedButton.icon(
-            onPressed: () {},
-            icon: Icon(
-              Icons.logout,
-              size: 24.0,
+            SizedBox(
+              width: 15,
             ),
-            label: Text(
-              "Log out",
-              style: TextStyle(fontSize: 17),
-            ),
-            style: ButtonStyle(
-              backgroundColor:
-                  MaterialStateProperty.all(Color.fromARGB(143, 255, 55, 112)),
-              padding: MaterialStateProperty.all(
-                  EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
-              shape: MaterialStateProperty.all(
-                RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(7),
+            ElevatedButton.icon(
+              onPressed: () {},
+              icon: Icon(
+                Icons.logout,
+                size: 24.0,
+              ),
+              label: Text(
+                "Log out",
+                style: TextStyle(fontSize: 17),
+              ),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(
+                    Color.fromARGB(143, 255, 55, 112)),
+                padding: MaterialStateProperty.all(
+                    EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
+                shape: MaterialStateProperty.all(
+                  RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(7),
+                  ),
                 ),
               ),
             ),
-          ),
-        ]),
+          ],
+        ),
+        SizedBox(
+          height: 9,
+        ),
       ]),
     );
   }
