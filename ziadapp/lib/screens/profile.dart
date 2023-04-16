@@ -158,6 +158,10 @@ class _ProfileState extends State<Profile> {
               "Log out",
               style: TextStyle(fontSize: 17),
             ),
+            style: ButtonStyle(
+              backgroundColor:
+                  MaterialStateProperty.all(Color.fromARGB(143, 255, 55, 112)),
+            ),
           ),
         ]),
       ]),
