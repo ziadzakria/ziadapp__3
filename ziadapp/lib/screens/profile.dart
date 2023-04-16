@@ -181,6 +181,25 @@ class _ProfileState extends State<Profile> {
           color: Colors.white,
           thickness: 0.44,
         ),
+        GridView.builder(
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                childAspectRatio: 3 / 2,
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 10),
+            itemCount: 3,
+            itemBuilder: (BuildContext context, int index) {
+              return ClipRRect(
+                borderRadius: BorderRadius.circular(4),
+                child: Image.network(
+                  "ziadapp/asstes/img/ownload.jpg",
+                  // height: 333,
+                  // width: 100,
+
+                  fit: BoxFit.cover,
+                ),
+              );
+            }),
       ]),
     );
   }
