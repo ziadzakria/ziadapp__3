@@ -34,6 +34,7 @@ class _WebScerrenState extends State<WebScerren> {
               color: secondaryColor,
             ),
             onPressed: () {},
+            _pageController.jumpToPage(1);
           ),
           IconButton(
             icon: Icon(
@@ -64,6 +65,7 @@ class _WebScerrenState extends State<WebScerren> {
         ),
       ),
         body: PageView(
+           controller: _pageController,
         onPageChanged: (index) {
          
         },
