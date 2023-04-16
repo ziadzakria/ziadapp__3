@@ -161,6 +161,8 @@ class _ProfileState extends State<Profile> {
             style: ButtonStyle(
               backgroundColor:
                   MaterialStateProperty.all(Color.fromARGB(143, 255, 55, 112)),
+              padding: MaterialStateProperty.all(
+                  EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
             ),
           ),
         ]),
