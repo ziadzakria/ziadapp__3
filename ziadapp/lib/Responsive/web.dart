@@ -15,10 +15,11 @@ class WebScerren extends StatefulWidget {
 
 class _WebScerrenState extends State<WebScerren> {
   final PageController _pageController = PageController();
-
+  int page = 0;
   navigateScreen(int indexx) {
     _pageController.jumpToPage(indexx);
     setState(() {});
+    page = indexx;
   }
 
   @override
@@ -29,7 +30,7 @@ class _WebScerrenState extends State<WebScerren> {
             IconButton(
               icon: Icon(
                 Icons.home,
-                color: secondaryColor,
+                color: page == 0 ? primaryColor : secondaryColor,
               ),
               onPressed: () {
                 navigateScreen(0);
@@ -38,7 +39,7 @@ class _WebScerrenState extends State<WebScerren> {
             IconButton(
               icon: Icon(
                 Icons.search,
-                color: secondaryColor,
+                color: page == 0 ? primaryColor : secondaryColor,
               ),
               onPressed: () {
                 navigateScreen(1);
@@ -47,7 +48,7 @@ class _WebScerrenState extends State<WebScerren> {
             IconButton(
               icon: Icon(
                 Icons.add_a_photo,
-                color: secondaryColor,
+                color: page == 0 ? primaryColor : secondaryColor,
               ),
               onPressed: () {
                 navigateScreen(2);
@@ -56,7 +57,7 @@ class _WebScerrenState extends State<WebScerren> {
             IconButton(
               icon: Icon(
                 Icons.favorite,
-                color: secondaryColor,
+                color: page == 0 ? primaryColor : secondaryColor,
               ),
               onPressed: () {
                 navigateScreen(3);
@@ -65,7 +66,7 @@ class _WebScerrenState extends State<WebScerren> {
             IconButton(
               icon: Icon(
                 Icons.person,
-                color: secondaryColor,
+                color: page == 0 ? primaryColor : secondaryColor,
               ),
               onPressed: () {
                 navigateScreen(4);
