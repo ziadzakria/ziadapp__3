@@ -62,7 +62,7 @@ class _ProfileState extends State<Profile> {
                     Text(
                       "8",
                       style: TextStyle(
-                        fontSize: 22,
+                        fontSize: 10000,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
@@ -78,6 +78,27 @@ class _ProfileState extends State<Profile> {
                     ),
                   ],
                 ),
+                 SizedBox(
+                      height: 5,
+                    ),
+                    Column(
+                      children: [
+                        Text(
+                          "1000",
+                          style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        Text(
+                          "Following",
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.grey),
               ],
             )
           ],
