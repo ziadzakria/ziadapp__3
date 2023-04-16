@@ -41,8 +41,8 @@ class _HomeState extends State<Home> {
             ),
       body: Container(
         decoration: BoxDecoration(
-          color: mobileBackgroundColor,
-        ),
+            color: mobileBackgroundColor,
+            borderRadius: BorderRadius.circular(12)),
         margin: EdgeInsets.symmetric(vertical: 100, horizontal: 100),
         child: Column(
           children: [
