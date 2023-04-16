@@ -16,6 +16,13 @@ class WebScerren extends StatefulWidget {
 class _WebScerrenState extends State<WebScerren> {
     final PageController _pageController = PageController();
 
+
+ navigate2Screen(int indexx) {
+    _pageController.jumpToPage(indexx);
+    setState(() {
+      page = indexx;
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
