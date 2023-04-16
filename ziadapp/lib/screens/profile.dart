@@ -108,13 +108,38 @@ class _ProfileState extends State<Profile> {
             width: double.infinity,
             child: Text(" Cute & nice girl")),
         SizedBox(
-          height: 5,
+          height: 15,
         ),
         Divider(
           color: Colors.white,
           thickness: 0.44,
-        )
-      ]),
+        ),
+        SizedBox(
+          height: 15,
+        ),
+       Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton.icon(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.edit,
+                  color: Colors.grey,
+                  size: 24.0,
+                ),
+                label: Text(
+                  "Edit profile",
+                  style: TextStyle(fontSize: 17),
+                ),
+                
+                    ),
+                  ),
+                ),
+              ),
+      ]
+      ),
+      ]
+      ),
     );
   }
 }
