@@ -14,6 +14,8 @@ class WebScerren extends StatefulWidget {
 }
 
 class _WebScerrenState extends State<WebScerren> {
+    final PageController _pageController = PageController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
