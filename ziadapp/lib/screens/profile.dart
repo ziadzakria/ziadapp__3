@@ -177,6 +177,10 @@ class _ProfileState extends State<Profile> {
         SizedBox(
           height: 9,
         ),
+        Divider(
+          color: Colors.white,
+          thickness: 0.44,
+        ),
       ]),
     );
   }
