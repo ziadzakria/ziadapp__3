@@ -44,7 +44,7 @@ class _HomeState extends State<Home> {
             color: mobileBackgroundColor,
             borderRadius: BorderRadius.circular(12)),
         margin: EdgeInsets.symmetric(
-            vertical: 11, horizontal: widthScreen > 600 ? 100 : 0),
+            vertical: 11, horizontal: widthScreen > 600 ? widthScreen / 7 : 0),
         child: Column(
           children: [
             Padding(
