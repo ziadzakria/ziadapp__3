@@ -107,6 +107,9 @@ class _ProfileState extends State<Profile> {
             margin: EdgeInsets.fromLTRB(15, 21, 0, 0),
             width: double.infinity,
             child: Text(" Cute & nice girl")),
+        SizedBox(
+          height: 5,
+        ),
         Divider(
           color: Colors.white,
           thickness: 0.44,
