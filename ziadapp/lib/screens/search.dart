@@ -12,7 +12,9 @@ class _SearchState extends State<Search> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Search Screen"),
+        title: TextFormField(
+          decoration: const InputDecoration(labelText: 'Search for a user...'),
+        ),
       ),
     );
   }
